@@ -1,0 +1,301 @@
+HTML: About1 & About2
+
+	<!-- Mission Vision -->
+	<div class="nh_mv">
+		<div id="mission" class="nh_m">
+			<h5>Our Mission</h5>
+			<p>xxx</p>
+		</div>
+
+		<div class="nh_v">
+			<h5>Our Vision</h5>
+			<p>xxx</p>
+		</div>
+	</div>
+	<!-- End of Mission Vision -->
+
+
+
+- About1
+
+
+	/* Mission Statement */
+	.nh_mv { display: flex; justify-content: space-between; color: #fff; margin: 40px 0; width: 100%; row-gap: 20px;}
+	
+	.nh_m .comp{color:var(--secColor);}
+	.nh_v .comp{color:var(--priColor);}
+	
+	.nh_m { background: var(--priColor); padding: 60px 35px 40px; border-radius: 0; width: 50%;}
+	.nh_v { background: var(--secColor); padding: 60px 35px 40px; border-radius: 0; width: 50%;}
+	
+	.nh_mv h5 { font-size: 30px; text-transform: uppercase; line-height: 100%; margin: 0 0 40px; padding-left: 70px; position: relative; font-weight: 500;font-family: var(--font2);}
+	.nh_mv h5 span{}
+	.nh_v h5 { padding-left: 80px; }
+	
+	.nh_mv section p{color:#fff;}
+	.nh_mv section p:last-child{margin-bottom: 0 !important;}
+	
+	.nh_mv .nh_m h5:before{content:'\f140';font-family: 'fontAwesome';font-size:66px;color:#fff;position: absolute;top:0;left:0;}
+	.nh_mv .nh_v h5:before{content:'\f06e';font-family: 'fontAwesome';font-size:66px;color:#fff;position: absolute;top:0;left:0;}
+	/* Mission Statement */
+
+
+>> 800px
+
+	.nh_mv {flex-wrap: wrap; }
+    .nh_m, .nh_v {width: 100%; border-radius: 0;}
+
+>> 600px 
+
+    .nh_mv h5 {font-size: 28px; line-height: 30px;}
+	
+	
+
+- About2
+
+	/* Mission and Vision Styling */ 
+	.nh_mv { display: flex; justify-content: center; margin: 30px auto 50px; text-align: center; clear: both; overflow: hidden; position: relative; }
+	.nh_mv div { margin: 15px; width: 100%; padding: 40px 25px; border: 1px solid #547587;box-shadow: 5px 5px 20px #888888; border-radius: 10px;}
+
+	.nh_mv h5 { font-weight: 700; font-size: 35px; line-height: 100%; color: #1a1100; margin-bottom: 20px; position: relative; text-transform: none; }
+	.nh_mv h5 span{display: block;}
+	.nh_mv p {margin-bottom: 0;}
+
+	.nh_mv .nh_m h5::before { content: '\f140'; font-family: fontAwesome; font-size: 66px; color: #33c69b; display: block; text-align: center; margin-bottom: 20px; position: static; }
+	.nh_mv .nh_v h5::before { content: '\f06e'; font-family: fontAwesome; font-size: 66px; color: #33c69b; display: block; text-align: center; margin-bottom: 20px; position: static;}
+	/* Mission and Vision Styling */
+
+
+	>> 800px
+
+		.nh_mv {flex-wrap: wrap; }
+		.nh_m, .nh_v {width: 100%; border-radius: 0;}
+
+	>> 600px -- FOR temp
+
+		.nh_mv h5 {font-size: 28px; line-height: 30px;}
+
+
+
+- About3
+
+	<!-- Mission Vision -->
+		<div class="nh_mv">
+		
+			<div id="mission" class="nh_m">
+				<figure><img src="[contenturl type=templateurl]/images/thumbnails/thumb-185142430.jpg" alt="image"></figure>
+				<div class="mv_content">
+					<h5>Our Mission Statement</h5>
+					<p>xxx</p>
+
+				</div>
+			</div>
+			
+			<div id="vision" class="nh_v">
+				<figure><img src="[contenturl type=templateurl]/images/thumbnails/thumb-185142430.jpg" alt="image"></figure>
+				<div class="mv_content">
+					<h5>Our Vision Statement</h5>
+					<p>xxx</p>
+
+				</div>
+			</div>
+			
+		</div>
+	<!-- End of Mission Vision -->
+
+	/* Mission Vision Styling */
+	.nh_mv {background: #fff; padding: 20px 0; position: relative; z-index: 1; color: #fff;}
+	.nh_m, .nh_v {display: flex; justify-content: center; margin-bottom: 50px;}
+
+	.nh_mv figure {width: 40%;}
+	.nh_mv figure img {   object-fit: cover;   width: 100%;   height: 100%;   object-position: center; }
+
+	.mv_content {background: var(--priColor); padding: 106px 50px 115px 62px; width: 60%;}
+
+	.nh_mv h5 {color: #fff; font-family: var(--font2); font-weight: 600; font-size: 30px; margin-bottom: 30px; text-transform: 500;}
+	.nh_mv h5 span {}
+
+	.nh_v {margin-bottom: 0;}
+	.nh_v .mv_content {order: -1;}
+	/* Mission Vision Styling */
+	
+
+	>> 1000px
+		.mv_content {width: 100%; padding: 40px 25px; }
+		.nh_m, .nh_v {   display: block;   margin-bottom: 20px; }
+		.nh_mv figure { display: none; }
+		
+		
+		
+- About4
+
+	<!-- Mission Vision -->
+	<div class="nh_mv">
+			<figure><img src="[contenturl type=templateurl]/images/thumbnails/thumb-185142430.jpg" alt="image"></figure>
+
+			<div class="mv_holder">
+				<div id="mission" class="nh_m">	
+					<div class="mv_content">
+						<h5>Our Mission Statement</h5>
+						<p>xxx</p>
+
+					</div>
+				</div>
+
+				<div id="vision" class="nh_v">
+					<div class="mv_content">
+						<h5>Our Vision Statement</h5>
+						<p>xxx</p>
+
+					</div>
+				</div>
+			</div>
+			
+		</div>
+	<!-- End of Mission Vision -->
+
+
+	/* Mission Vision Styling */
+	.nh_mv {background: #000; padding: 20px; position: relative; z-index: 1; color: #fff; display: flex; justify-content: center; column-gap: 20px;}
+
+	.mv_holder {width: 60%;}
+	.nh_m, .nh_v {margin-bottom: 25px; padding: 20px; background: var(--priColor);}
+	.nh_v {margin-bottom: 0;}
+
+	.nh_mv figure {width: 40%; border: 2px solid #fff;}
+	.nh_mv figure img {   object-fit: cover;   width: 100%;   height: 100%;   object-position: center; }
+
+	.mv_content {}
+
+	.nh_mv h5 {color: #fff; font-family: var(--font2); font-weight: 600; font-size: 30px; margin-bottom: 30px; text-transform: none;}
+	.nh_mv p {}
+	/* Mission Vision Styling */
+
+
+	>> 1000px:
+	
+	.mv_holder {   width: 100%; }
+		.nh_mv figure {display: none;}
+		
+		
+		
+- About5
+
+		<!-- Mission Vision -->
+		<div class="nh_mv">
+
+			<figure><img src="[contenturl type=templateurl]/images/thumbnails/thumb-185142430.jpg" alt="image"></figure>
+
+			<section>
+					<h5> Core Values</h5>
+					<p>xxx</p>
+			</section>
+
+			<figure><img src="[contenturl type=templateurl]/images/thumbnails/thumb-185142430.jpg" alt="image"></figure>
+
+			<section>
+				<h5> Our Mission Statement</h5>
+				<p>xxx</p>
+			</section>
+
+			<figure><img src="[contenturl type=templateurl]/images/thumbnails/thumb-185142430.jpg" alt="image"></figure>
+
+			<section>
+				<h5> Our Vision Statement</h5>
+				<p>xxx</p>
+			</section>
+	
+
+		</div>
+		<!-- End of Mission Vision -->
+
+
+   	/* Mission Vision Styling */
+	.nh_mv {color: var(--darkText); display: flex;justify-content: center;column-gap: 20px;row-gap: 20px;flex-wrap: wrap; margin: 30px 0;}
+
+	.nh_mv section {padding: 25px;max-width: 350px;width: 100%;min-height: 300px; border: 1px solid #000; border-radius: 0;}
+	.nh_mv section h5 {font-family: var(--font2);font-weight: 600;font-size: 30px;margin: 0 0 10px;text-transform: none;line-height: 35px;}
+	.nh_mv section h5 span {display: block;}
+	.nh_mv section p {}
+
+	.nh_mv figure {max-width: 350px;width: 100%; border: 1px solid #000;} 
+	.nh_mv img {object-fit: cover;object-position: center;}
+	/* Mission Vision Styling */
+
+	>>1200px:
+	
+	.nh_mv section {width: 30%;}
+	.nh_mv figure { width: 30%;}
+	
+	>> 1000px:
+	
+	.nh_mv figure {display: none;} 
+	.nh_mv section {width: 100%;}
+		
+
+
+- About6
+
+		<!-- Mission Vision -->
+		<div class="nh_mv">
+
+			<div class="nh_m">
+				<h5> Our Mission Statement</h5>
+				<p>xxx</p>
+
+			</div>
+
+			<figure><img src="[contenturl type=templateurl]/images/thumbnails/thumb-185142430.jpg" alt="image"></figure>
+
+			<div class="nh_v">
+				<h5> Our Mission Statement</h5>
+				<p>xxx</p>
+
+			</div>
+
+		</div>
+		<!-- Mission Vision -->
+		
+	/* Mission Vision Styling */
+	.nh_mv {position: relative;margin: 30px 0;}
+
+	.nh_mv figure{width: 100%; max-width: 500px; min-height: 300px;margin: 0 auto;border: 1px solid blue;}
+	.nh_mv img{object-fit: cover; object-position: center;}
+
+	.nh_mv h5 {font-family: var(--font2);font-weight: 600;font-size: 30px;margin: 0 0 10px;text-transform: none;line-height: 35px;}
+	.nh_mv h5 span{display: block;}
+	.nh_mv p{}
+
+	.nh_m {padding: 25px; width: 100%; max-width: 500px; min-height: 200px;margin: 0 0px -85px auto;position: relative;z-index: 22;border: 1px solid red;}
+	.nh_v {padding: 25px; width: 100%; max-width: 500px; min-height: 200px;margin: -85px auto 0 0;position: relative;z-index: 22;border: 1px solid red;}
+	/* Mission Vision Styling */
+	
+	
+	>> 1000px:
+	
+	.nh_mv figure { display: none; }
+  	.nh_m { margin: 0 auto 20px; }
+  	.nh_v { margin: 0 auto; }
+	
+	
+	
+	
+For template:
+
+>> 1000px
+	.mv_content {width: 100%; padding: 40px 25px; }
+	.nh_m, .nh_v {   display: block;   margin-bottom: 20px; }
+	.nh_mv figure { display: none; }
+
+>> 800px
+
+	.nh_mv {flex-wrap: wrap; }
+    .nh_m, .nh_v {width: 100%; border-radius: 0;}
+
+>> 600px
+
+    .nh_mv h5 {font-size: 28px; line-height: 30px;}
+
+  
+- Service1
+

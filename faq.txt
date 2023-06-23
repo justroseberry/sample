@@ -1,0 +1,39 @@
+FAQ
+
+>> HTML:
+
+<h2 class="faq_title">FAQ</h2>
+
+<!--FAQ html code -->
+<div class="faq">
+
+<h6>Sample</h6>
+<div> Description</div>
+<h6>Sample</h6>
+<div> Description</div>
+<h6>Sample</h6>
+<div> Description</div>
+
+</div>
+
+>> CSS:
+body{padding:20px}
+h2{font:bold 20px/100% 'Arial'}
+
+/* FAQ css code */
+.faq {margin:20px auto;}
+.faq h6{padding:10px 10px 10px 50px;background:#fff;color:#000;font-weight: 500;font-size:16px;margin:0 0 5px;border:1px solid #268000;cursor:pointer;position:relative;}
+.faq div{display:none;background:#FAFDFE;padding:20px 10px;margin:5px 0; font-weight: 500;border-left:2px solid #268000;position:relative;}
+.faq h6:before{content:"+";width:30px;height:30px;color:#fff;border-radius:5px;background:#268000;display:inline-block;vertical-align:middle;text-align:center;line-height:30px;position:absolute;top:50%;left:10px;transform:translate(0,-50%);-webkit-transform:translate(0,-50%);-moz-transform:translate(0,-50%);}
+.faq .sign:before{content:"-"!important;line-height:25px;}
+
+>> jquery 
+//add to plugins.js
+
+$('.faq h6').click(function(){
+   $(this).next().slideToggle()
+  .siblings('.faq div').slideUp();
+  //toggle sign
+   $(this).toggleClass('sign')
+   .siblings('.faq h6').removeClass();
+ });
